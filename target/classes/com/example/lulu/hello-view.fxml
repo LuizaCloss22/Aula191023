@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="layout" alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="519.0" prefWidth="415.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lulu.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label alignment="CENTER" prefHeight="17.0" prefWidth="76.0" text="Login" textAlignment="CENTER" />
+      <TextField fx:id="txtusuario" promptText="Digite seu nome de usuario" />
+      <PasswordField fx:id="txtsenha" promptText="Digite sua senha" />
+      <Button fx:id="btnentrar" mnemonicParsing="false" onMouseClicked="#efetuarlogin" text="Entrar" />
+      <Label fx:id="lblresultado" prefHeight="17.0" prefWidth="394.0" text="" />
+   </children>
+</VBox>
